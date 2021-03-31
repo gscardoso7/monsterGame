@@ -6,10 +6,11 @@ public class Escolha {
         Scanner leitura = new Scanner(System.in);
         int escolhaJogadorUm = 0;
         int controleEscolhaJogadorUm = 1;
-        
+
         do{
 
             System.out.println(" ");
+            System.out.println("Atenção jogar, pelo ID:");
             System.out.println("Faça sua " + controleEscolhaJogadorUm + "ª escolha de monstro para a batalha\n");
             System.out.printf("Escolha: ");
 
@@ -30,6 +31,5 @@ public class Escolha {
 
         } while (controleEscolhaJogadorUm <= 3 );
         
-    
     }
 }
