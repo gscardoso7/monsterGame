@@ -3,7 +3,8 @@ public class App {
         
         Monstro tepig = new Monstro("Tepig","fogo",65,63,45,45);
         Monstro snivy = new Monstro("Snivy","grama",45,45,55,63);
-        Monstro oshawott = new Monstro("Oshawott","agua",55,55,45,45);  
+        Monstro oshawott = new Monstro("Oshawott","agua",55,55,45,45); 
+        Escolha verificaEscolhaDoJogador = new Escolha();
               
         System.out.println("Nome: " + tepig.nome +
                            "\nTipo: " + tepig.tipo+
@@ -25,8 +26,8 @@ public class App {
                            "\nForça: " + oshawott.forca+
                            "\nDefesa: " + oshawott.defesa+
                            "\nVelocidade: " + oshawott.velocidade+"\n");
-
         
+        verificaEscolhaDoJogador.EscolhaMonstro();
 
     }
 }
