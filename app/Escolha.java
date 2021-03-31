@@ -4,32 +4,43 @@ public class Escolha {
     public void EscolhaMonstro() {
 
         Scanner leitura = new Scanner(System.in);
-        int escolhaJogadorUm[] = new int[3];
+        int escolhaJogadorUm;
         int controleEscolhaJogadorUm = 1;
+        int[] monstro = new int[3];
+        int acmErro = 0;
 
-        for(int percorreVetor = 0; percorreVetor < 1; percorreVetor++){
+        for(int i = 0; i < controleEscolhaJogadorUm; i++) {
             do{
 
                 System.out.println(" ");
-                System.out.println("Atenção jogar, pelo ID:");
+                System.out.println("Atenção jogador, escolha pelo ID:");
                 System.out.println("Faça sua " + controleEscolhaJogadorUm + "ª escolha de monstro para a batalha\n");
                 System.out.printf("Escolha: ");
 
                 do{
-                    escolhaJogadorUm[percorreVetor] = leitura.nextInt();
+                    escolhaJogadorUm = leitura.nextInt();
+                    monstro[controleEscolhaJogadorUm] = escolhaJogadorUm;
 
-                    if(escolhaJogadorUm[percorreVetor] < 1 || escolhaJogadorUm[percorreVetor] > 6){
+                    if(escolhaJogadorUm < 1 || escolhaJogadorUm > 6){
                         System.out.println("\nMonstro não encontrado, escolha novamente!\n");
                         System.out.println("Faça sua " + controleEscolhaJogadorUm + "ª escolha de algum monstro acima\n");
                         System.out.printf("Escolha: ");
-                        escolhaJogadorUm[percorreVetor] = 0;
+                        escolhaJogadorUm = 0;
                     }
 
+                    if(monstro[i] == escolhaJogadorUm){
+                        System.out.println("Monstro já escolhido. Escolha outro monstro, jogador!");
+                        System.out.println("Faça sua " + controleEscolhaJogadorUm + "ª escolha de algum monstro acima\n");
+                        System.out.printf("Escolha: ");
+                        escolhaJogadorUm = 0;
+                        acmErro++;
+                    }
 
-                }while(escolhaJogadorUm[percorreVetor] < 1 || escolhaJogadorUm[percorreVetor] > 6);
+                }while(escolhaJogadorUm < 1 || escolhaJogadorUm > 6);
                 
                 controleEscolhaJogadorUm++;
-                escolhaJogadorUm[percorreVetor] = percorreVetor * 3;
+                escolhaJogadorUm++;
+                monstro[i]++;
 
             } while (controleEscolhaJogadorUm <= 3 );
         }
