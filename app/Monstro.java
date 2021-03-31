@@ -1,4 +1,5 @@
 public class Monstro{
+    int ID;
     String nome;
     String tipo;
     int vida;
@@ -7,7 +8,8 @@ public class Monstro{
     int velocidade;
 
 
-    public Monstro(String nome, String tipo, int vida, int forca,int defesa, int velocidade){
+    public Monstro(int ID, String nome, String tipo, int vida, int forca,int defesa, int velocidade){
+        this.ID = ID;
         this.nome = nome;
         this.tipo = tipo;
         this.vida = vida;
@@ -18,7 +20,8 @@ public class Monstro{
     }
 
     public void Imprime(){
-        System.out.println("Nome: " + this.nome+
+        System.out.println("ID:" + this.ID+
+                            "\nNome: " + this.nome+
                             "\nTipo: " + this.tipo+
                             "\nVida: " + this.vida+
                             "\nForça: " + this.forca+
