@@ -17,5 +17,14 @@ public class Monstro{
 
     }
 
+    public void Imprime(){
+        System.out.println("Nome: " + this.nome+
+                            "\nTipo: " + this.tipo+
+                            "\nVida: " + this.vida+
+                            "\nForça: " + this.forca+
+                            "\nDefesa: " + this.defesa+
+                            "\nVelocidade: " + this.velocidade+"\n");
 
+
+    }
 }
