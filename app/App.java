@@ -1,16 +1,23 @@
 public class App {
     public static void main(String[] args){
         
-        Monstro tepig = new Monstro(1,"Tepig","fogo", 65, 63, 45, 45);
-        Monstro snivy = new Monstro(2, "Snivy", "grama", 45, 45, 55, 63);
-        Monstro oshawott = new Monstro(3, "Oshawott", "agua", 55, 55, 45, 45); 
+        Monstro Beholder = new Monstro(1,"Beholder","fogo", 65, 63, 45, 45);
+        Monstro Mimico = new Monstro(2, "Mimico", "grama", 45, 45, 55, 63);
+        Monstro Lich = new Monstro(3, "Lich", "agua", 55, 55, 45, 45);
+        Monstro Drow = new Monstro(4, "Drow", "gelo", 65, 63, 45, 45);
+        Monstro Tarrasque = new Monstro(5, "Tarrasque", "agua", 65, 63, 45, 45);
+        Monstro Female = new Monstro(6, "Female", "fogo", 65, 63, 45, 45);
+
         Escolha verificaEscolhaDoJogador = new Escolha();
 
-        System.out.println("\tMonster Game");
+        System.out.println("\t>>> Monster Game <<<");
 
-        tepig.Imprime();
-        snivy.Imprime();
-        oshawott.Imprime();
+        Beholder.Imprime();
+        Mimico.Imprime();
+        Lich.Imprime();
+        Drow.Imprime();
+        Tarrasque.Imprime();
+        Female.Imprime();
         
         verificaEscolhaDoJogador.EscolhaMonstro();
 
