@@ -10,7 +10,11 @@ public class App {
 
         Escolha verificaEscolhaDoJogador = new Escolha();
 
-        System.out.println("\t>>> Monster Game <<<");
+        Menu menuInteracaoComUsuario = new Menu();
+
+        menuInteracaoComUsuario.menuInteracao();
+
+        
 
         Beholder.Imprime();
         Mimico.Imprime();
@@ -19,7 +23,7 @@ public class App {
         Tarrasque.Imprime();
         Female.Imprime();
         
-        verificaEscolhaDoJogador.EscolhaMonstro();
+        // verificaEscolhaDoJogador.EscolhaMonstro();
 
     }
 }
