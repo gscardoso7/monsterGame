@@ -6,7 +6,7 @@ public class App {
         Monstro Lich = new Monstro(3, "Lich", "agua", 55, 55, 45, 45);
         Monstro Drow = new Monstro(4, "Drow", "gelo", 65, 63, 45, 45);
         Monstro Tarrasque = new Monstro(5, "Tarrasque", "agua", 65, 63, 45, 45);
-        Monstro Female = new Monstro(6, "Female", "fogo", 65, 63, 45, 45);
+        Monstro Female = new Monstro(6, "Female", "fogo", 65, 63, 45, 44);
 
         Escolha verificaEscolhaDoJogador = new Escolha();
 

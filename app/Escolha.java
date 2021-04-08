@@ -37,7 +37,6 @@ public class Escolha {
                         }
 
                         monstro[i]++;
-                        escolhaJogadorUm++;
                     }
 
                 }while(escolhaJogadorUm < 1 || escolhaJogadorUm > 6);
