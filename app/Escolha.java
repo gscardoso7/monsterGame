@@ -7,7 +7,7 @@ public class Escolha {
         int escolhaJogadorUm = 0;   
         int controleEscolhaJogadorUm = 1;
 
-        ArrayList percorreListagemDeMonstros = new ArrayList();
+        ArrayList<String> percorreListagemDeMonstros = new ArrayList();
 
         Scanner leitura = new Scanner(System.in);
 
@@ -21,6 +21,7 @@ public class Escolha {
             switch (escolhaJogadorUm) {
                 case 1:
                     System.out.println("Beholder\n");
+
                     percorreListagemDeMonstros.add("Beholder");
 
                     break;
@@ -68,6 +69,7 @@ public class Escolha {
                         escolhaJogadorUm = leitura.nextInt();
 
                         System.out.println("\n");
+                        
 
                     } while (escolhaJogadorUm < 1 || escolhaJogadorUm > 6);
 
@@ -79,5 +81,6 @@ public class Escolha {
         } while (controleEscolhaJogadorUm <= 3);
         
         System.out.println(percorreListagemDeMonstros);
+
     }
 }
