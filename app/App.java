@@ -10,7 +10,7 @@ public class App {
         Monstro Tarrasque = new Monstro(5, "Tarrasque", "agua", 65, 63, 45, 45);
         Monstro Female = new Monstro(6, "Female", "fogo", 65, 63, 45, 44);
 
-        //Escolha verificaEscolhaDoJogador = new Escolha();
+        Escolha verificaEscolhaDoJogador = new Escolha();
 
         Menu menuInteracaoComUsuario = new Menu();
         resposta = menuInteracaoComUsuario.menuInteracao();
@@ -23,7 +23,7 @@ public class App {
             Tarrasque.Imprime();
             Female.Imprime();
 
-            // verificaEscolhaDoJogador.EscolhaMonstro();
+            verificaEscolhaDoJogador.EscolhaMonstro();
         }
 
         else if (resposta == 2) {
