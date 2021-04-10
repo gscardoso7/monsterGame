@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Escolha {
@@ -5,81 +6,78 @@ public class Escolha {
 
         int escolhaJogadorUm = 0;   
         int controleEscolhaJogadorUm = 1;
-        int[] monstro = new int[3];
-        int i;
+
+        ArrayList percorreListagemDeMonstros = new ArrayList();
+
         Scanner leitura = new Scanner(System.in);
 
-        for (i = 0; i < monstro.length; i++) {
+        do {
 
-            monstro[i] = monstro[i];
+            System.out.println("Faça sua " + controleEscolhaJogadorUm +"ª escolha\n");
+            System.out.printf("RESPOSTA: ");
 
-            do {
+            escolhaJogadorUm = leitura.nextInt();
 
-                System.out.println("Faça sua " + controleEscolhaJogadorUm +"ª escolha\n");
-                System.out.printf("RESPOSTA: ");
+            switch (escolhaJogadorUm) {
+                case 1:
+                    System.out.println("Beholder\n");
+                    percorreListagemDeMonstros.add("Beholder");
 
-                escolhaJogadorUm = leitura.nextInt();
+                    break;
 
-                switch (escolhaJogadorUm) {
-                    case 1:
-                        System.out.println("Beholder\n");
-                        
-                        monstro[i]++;
-                        
-                        break;
+                case 2:
+                    System.out.println("Mimico\n");
 
-                    case 2:
-                        System.out.println("Mimico\n");
-                        
-                        monstro[i]++;
-                        
-                        break;
-                    
-                    case 3:
-                        System.out.println("Lich\n");
-                        
-                        monstro[i]++;
-                        
-                        break;
-                    
-                    case 4:
-                        System.out.println("Drow\n");
-                        
-                        monstro[i]++;
+                    percorreListagemDeMonstros.add("Mimico");
 
-                        break;
+                    break;
+                
+                case 3:
+                    System.out.println("Lich\n");
 
-                    case 5:
-                        System.out.println("Tarrasque\n");
-                        
-                        monstro[i]++;
-                        
-                        break;
+                    percorreListagemDeMonstros.add("Lich");
 
-                    case 6:
-                        System.out.println("Female\n");
-                        
-                        monstro[i]++;
-                        
-                        break;
+                    break;
+                
+                case 4:
+                    System.out.println("Drow\n");
 
-                    default:
-                        do {
-                            System.out.println("Opção não encontrada, digite novamente\n");
-                            System.out.println("RESPOSTA: ");
+                    percorreListagemDeMonstros.add("Drow");
 
-                            escolhaJogadorUm = leitura.nextInt();
+                    break;
 
-                            System.out.println("\n");
+                case 5:
+                    System.out.println("Tarrasque\n");
 
-                        } while (escolhaJogadorUm < 1 || escolhaJogadorUm > 6);
+                    percorreListagemDeMonstros.add("Tarrasque");
 
-                        break;
-                }
-            
-                controleEscolhaJogadorUm++;
+                    break;
 
-            } while (controleEscolhaJogadorUm < 2);
-        }
+                case 6:
+                    System.out.println("Female\n");
+        
+                    percorreListagemDeMonstros.add("Female");
+
+                    break;
+
+                default:
+                    do {
+                        System.out.println("Opção não encontrada, digite novamente\n");
+                        System.out.println("RESPOSTA: ");
+
+                        escolhaJogadorUm = leitura.nextInt();
+
+                        System.out.println("\n");
+
+                    } while (escolhaJogadorUm < 1 || escolhaJogadorUm > 6);
+
+                    break;
+            }
+
+            controleEscolhaJogadorUm++;
+
+        } while (controleEscolhaJogadorUm <= 3);
+        
+        System.out.println(percorreListagemDeMonstros);
     }
 }

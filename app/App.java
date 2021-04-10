@@ -27,6 +27,8 @@ public class App {
             Tarrasque.Imprime();
             Female.Imprime();
 
+            verificaEscolhaDoJogador.EscolhaMonstro();
+
             /*
             switch (resposta) {
                 case 1:
@@ -57,5 +59,6 @@ public class App {
             System.out.println("Sessão encerrada Monster Gamer");
             System.out.println("Até a próxima");
         }
+
     }
 }
