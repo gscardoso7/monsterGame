@@ -8,7 +8,8 @@ public class Menu {
         System.out.printf("\n");
 
         System.out.println("\t1- Jogar partida arcade");
-        System.out.println("\t2- Sair");
+        System.out.println("\t2- Exibir regras do jogo");
+        System.out.println("\t3- Sair");
         
         System.out.printf("\n");
         System.out.printf("\tRESPOSTA: ");

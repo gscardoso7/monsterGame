@@ -29,6 +29,12 @@ public class App {
 
             verificaEscolhaDoJogador.EscolhaMonstro();
 
+            /* 
+            Comentários escritos abaixo para facilitar testes,
+            Não deve ser usado pois o menu necessita de algumas
+            mudanças.
+            */
+
             /*
             switch (resposta) {
                 case 1:
@@ -55,10 +61,42 @@ public class App {
             */
         }
 
-        else if (resposta == 2) {
+        /*
+        else if(resposta == 2){
+            System.out.println("Regras do jogo: ");
+            System.out.println("1- O mesmo jogador não poderá escolher o mesmo monstro");
+            System.out.println("2- Existem as prioridades de desempate para quem vai atacar primeiro");
+            System.out.println("3- O jogador 2 não tem desvantagem por ser 2");
+
+            System.out.println("O que deseja fazer?");
+            System.out.println("\t 1- Voltar ao menu");
+            System.out.println("\t 2- Jogar partida arcade!");
+            System.out.println("\t 3- Sair");
+
+            
+            /*
+            if (resposta == 1) {
+
+            }
+            *
+
+            if (resposta == 2) {
+                verificaEscolhaDoJogador.EscolhaMonstro();
+            }
+
+            else if (resposta == 3) {
+                System.out.println("Sessão encerrada Monster Gamer");
+                System.out.println("Até a próxima");
+            }
+        }
+
+        */
+        else if (resposta == 3) {
             System.out.println("Sessão encerrada Monster Gamer");
             System.out.println("Até a próxima");
         }
+
+        
 
     }
 }
