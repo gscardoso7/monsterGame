@@ -5,6 +5,7 @@
   public void ataqueMonstro(){
 
     packag class ataquesMonstros;
+    int x = 10;
   
     public class RPGFigthGame {
       
