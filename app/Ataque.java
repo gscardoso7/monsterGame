@@ -1,8 +1,10 @@
-class Main {
-
-    package class ataquesMonstros;
     import java.util.Scanner;
     import java.util.Random;
+    public class Ataque {
+  
+  public void ataqueMonstro(){
+
+    packag class ataquesMonstros;
   
     public class RPGFigthGame {
       
@@ -72,19 +74,5 @@ class Main {
       }
   
     }
-  
-    public static void main(String[] args) {
-      Scanner leitor = new Scanner(System.in);
-      int continua = 1;
-      while(continua == 1){
-  
-        batalha();
-  
-        System.out.println("Fim de jogo. Deseja continuar? (1) Sim (2) Não");
-        continua = leitor.nextInt();
-      }
-  
-    }
-  
   }
-  
+}
